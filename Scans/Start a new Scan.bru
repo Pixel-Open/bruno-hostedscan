@@ -1,0 +1,21 @@
+meta {
+  name: Start a new Scan
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/scans
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "type": "NMAP",
+    "targets": ["example.com", "123.123.123.123"],
+    "target_ids": ["123", "456"],
+    "tags": ["prod", "web-server"],
+    "use_authentication": true
+  }
+}

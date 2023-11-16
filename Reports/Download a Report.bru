@@ -1,0 +1,15 @@
+meta {
+  name: Download a Report
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/reports/{{id}}
+  body: none
+  auth: none
+}
+
+vars:pre-request {
+  id: 12345
+}

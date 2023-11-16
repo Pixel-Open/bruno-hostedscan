@@ -1,0 +1,15 @@
+meta {
+  name: Update a Target
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/targets/{{id}}
+  body: none
+  auth: none
+}
+
+vars:pre-request {
+  id: 12345
+}

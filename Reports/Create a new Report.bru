@@ -1,0 +1,23 @@
+meta {
+  name: Create a new Report
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/reports
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "report_format": "PDF",
+    "targets_filter": {
+      "target_ids": [
+        "1a2b3c-target-id-here"
+      ]
+    },
+    "risks_filter": {}
+  }
+}

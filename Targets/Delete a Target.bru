@@ -1,0 +1,22 @@
+meta {
+  name: Delete a Target
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/targets/{{id}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "label": "url",
+    "tags": ["api-test"]
+  }
+}
+
+vars:pre-request {
+  id: 12345
+}
