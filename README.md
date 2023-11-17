@@ -1,6 +1,6 @@
 # Bruno Hostedscan API
 
-An usebruno collection to use the HostedScan API resources
+An usebruno collection to use the [HostedScan](https://hostedscan.com/) API resources
 
 ## Installation
 
