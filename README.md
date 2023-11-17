@@ -1,4 +1,4 @@
-# Bruno HostedScan
+# Bruno Hostedscan API
 
 An usebruno collection to use the HostedScan API resources
 
