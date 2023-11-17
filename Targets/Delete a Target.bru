@@ -4,17 +4,10 @@ meta {
   seq: 5
 }
 
-put {
+delete {
   url: {{baseUrl}}/targets/{{id}}
   body: json
   auth: none
-}
-
-body:json {
-  {
-    "label": "url",
-    "tags": ["api-test"]
-  }
 }
 
 vars:pre-request {
